@@ -1,6 +1,6 @@
 # Python Automation Toolkit
 
-> 个人Python自动化工具集 — 涵盖网页数据抓取、文件批处理、图片分类、定时任务等实用场景。
+> 个人Python自动化工具集 — 涵盖网页数据抓取、文件批处理、定时任务等实用场景。
 
 ## 📦 模块概览
 
@@ -8,7 +8,6 @@
 |:---|:---|:---|
 | **pixiv_downloader** | Pixiv图片批量下载、标签翻译、按作者分类整理 | requests, JSON API, 多线程 |
 | **pixiv_novel** | Pixiv小说下载、按标签筛选、收藏阈值过滤 | requests, HTML解析 |
-| **image_classifier** | 图片批量分类（按标签/作者/来源等维度） | PIL/Pillow, 文件IO |
 | **daily_checkin** | 每日自动签到（多平台聚合API + QQ客户端自动化） | requests, OCR, 鼠标控制 |
 | **tag_excel_generator** | 标签分类Excel自动生成（全量/样本） | openpyxl, pandas |
 | **novel_tools** | TXT小说按章节分割为独立文件 | 正则, 文件IO |
@@ -33,7 +32,6 @@ cd daily_checkin && python daily_checkin.py
 
 - **Pixiv下载器** — 按作者/标签批量下载画作，自动翻译标签、按作者分类整理文件夹
 - **小说筛选下载** — 按标签逐页爬取Pixiv小说，黑名单过滤、收藏阈值筛选
-- **图片分类** — AI辅助 + 规则引擎，批量将图片按内容分类到不同文件夹
 - **每日签到** — 基于OCR视觉定位的多平台自动签到，支持Windows定时任务
 - **标签Excel** — 从标签数据库生成全量/样本Excel分类对照表
 - **章节分割** — 将长篇TXT按"第XXX章"自动分割为独立文件
@@ -42,7 +40,7 @@ cd daily_checkin && python daily_checkin.py
 ## 📝 技术亮点
 
 - **AI Agent辅助开发**：多数工具借助 GenericAgent 框架辅助完成需求分析→编码→调试→文档全流程
-- **Prompt工程驱动**：复杂功能（标签翻译、图片分类）通过结构化Prompt + LLM实现智能处理
+- **Prompt工程驱动**：复杂功能（标签翻译）通过结构化Prompt + LLM实现智能处理
 - **OCR视觉定位**：签到脚本使用OCR + 鼠标精确点击，不依赖键盘快捷键，适应UI变化
 - **模块化设计**：核心引擎与入口分离，支持独立使用和Agent调用两种模式
 
