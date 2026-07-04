@@ -56,4 +56,4 @@ MIT License. Copyright (c) 2026 Hhh12138-Hhh.
 
 ---
 
-*本项目中的部分工具借助 [GenericAgent](https://github.com/JinyiHan99/GenericAgent) AI Agent框架辅助开发。*
+
